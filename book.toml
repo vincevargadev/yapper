@@ -1,6 +1,31 @@
 [book]
-authors = ["vvarga"]
+authors = ["Vince Varga"]
 language = "en"
 multilingual = false
 src = "src"
 title = "Yapper: Yet Another Programming Project Encouraging Reinvention"
+
+# Here you can read more about all these fields:
+# https://rust-lang.github.io/mdBook/format/configuration/renderers.html#html-renderer-options
+[output.html]
+
+# Make sure math looks good.
+# https://rust-lang.github.io/mdBook/format/mathjax.html
+mathjax-support = true
+
+# The light default theme in my opinion is hideous.
+# Let's use something pretty!
+default-theme = "ayu"
+
+# Ayu looks amazing!
+preferred-dark-theme = "ayu"
+
+git-repository-url = "https://github.com/vincevargadev/yapper"
+git-repository-icon = "fa-square-github"
+edit-url-template = "https://github.com/vincevargadev/yapper/edit/main/{path}"
+cname = "yapper.vincevarga.dev"
+
+# https://rust-lang.github.io/mdBook/format/configuration/renderers.html#outputhtmlfold
+[output.html.fold]
+enable = true
+level = 1
