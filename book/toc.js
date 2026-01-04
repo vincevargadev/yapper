@@ -8,7 +8,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
         super();
     }
     connectedCallback() {
-        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>';
+        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="about-the-book.html">About the book</a></li><li class="chapter-item expanded affix "><a href="about-the-author.html">About the author</a></li><li class="chapter-item expanded "><a href="todo-mvc.html"><strong aria-hidden="true">1.</strong> TodoMVC</a></li><li class="chapter-item expanded "><a href="your-life-in-weeks.html"><strong aria-hidden="true">2.</strong> Your Life in Weeks</a></li><li class="chapter-item expanded "><a href="calculator.html"><strong aria-hidden="true">3.</strong> Calculator</a></li><li class="chapter-item expanded "><a href="starbutts.html"><strong aria-hidden="true">4.</strong> StarButts</a></li><li class="chapter-item expanded "><a href="cross-platform-calculator.html"><strong aria-hidden="true">5.</strong> Cross-Platform Calculator</a></li><li class="chapter-item expanded "><a href="todo-mvc.html"><strong aria-hidden="true">6.</strong> TodoMVC</a></li></ol>';
         // Set the current, active page, and reveal it if it's hidden
         let current_page = document.location.href.toString().split("#")[0];
         if (current_page.endsWith("/")) {

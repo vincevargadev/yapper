@@ -3,7 +3,7 @@ authors = ["Vince Varga"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Yapper: Yet Another Programming Project Encouraging Reinvention"
+title = "Yapper: Yet Another Pet Project En Route"
 
 # Here you can read more about all these fields:
 # https://rust-lang.github.io/mdBook/format/configuration/renderers.html#html-renderer-options

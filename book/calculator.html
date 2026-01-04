@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Yapper: Yet Another Pet Project En Route</title>
-        <meta name="robots" content="noindex">
+        <title>Calculator - Yapper: Yet Another Pet Project En Route</title>
 
 
         <!-- Custom HTML head -->
@@ -132,6 +131,9 @@
                         <a href="https://github.com/vincevargadev/yapper" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-square-github"></i>
                         </a>
+                        <a href="https://github.com/vincevargadev/yapper/edit/main/src/calculator.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
 
                     </div>
                 </div>
@@ -158,119 +160,19 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>Welcome to <em>Yapper: Yet Another Pet Project En Route</em>!
-This book is a collection of pet project ideas.
-If you've ever found yourself staring at an empty GitHub repository,
-unsure of what to build next, this book is for you.</p>
-<h2 id="why-work-on-pet-projects"><a class="header" href="#why-work-on-pet-projects">Why Work on Pet Projects?</a></h2>
-<p>Pet projects are the playgrounds of developers.
-They offer a low-pressure environment to experiment, learn,
-and create without deadlines, code reviews, or business constraints.
-Whether you're sharpening your skills, testing new concepts, or just having fun,
-pet projects are one of the best ways to grow as a programmer.</p>
-<p>Here's why they matter:</p>
-<ul>
-<li><strong>Learning by doing</strong>: Reading about a technology is one thing;
-using it in a real project is another. Pet projects bridge that gap.</li>
-<li><strong>Building a portfolio</strong>: Employers and clients love to see what you can build.
-A strong GitHub history filled with interesting projects speaks louder than a resume.</li>
-<li><strong>Exploring new ideas</strong>: Sometimes, the best way to test an idea is to build it.
-A small project might evolve into something bigger.</li>
-<li><strong>Enjoying the process</strong>: Programming should be fun.
-Working on your own ideas, at your own pace, can be incredibly rewarding.</li>
-</ul>
-<p>Each project comes with an explanation of the problem and key considerations.
-You're encouraged to modify and extend the ideas, making them truly your own.</p>
-<p>So, let's start building!</p>
-<p>Notest to self:</p>
-<ul>
-<li>mention that usually I have plenty of ideas when I can't code, and don't remember any of them when I have time to code a little.</li>
-<li>make this more authentic</li>
-<li>write real highlights of Rust (language, tooling, ecosystem, jobs)</li>
-<li>why work on pet projects (have a defined goal and work towards it, learn tools by applying them to wellknown simple problems, prepare for interviews, discover the ecosystem, tooling, language)</li>
-<li>explain the levels: easy days, medium weeks, hard months</li>
-<li>maybe all problems should have levels: todomvc easy: store in localstorage, medium: integrate with rest, hard: crdt.</li>
-<li>include some level of implementation detail in the challenge. writing a mobile app voice recorder is very different than a cli voice recorder</li>
-</ul>
-<p>Vague ideas</p>
-<ul>
-<li>encode decode tools in the browser (utf8, query params, url, etc...)</li>
-<li>weight tracker in the browser local storage</li>
-<li>exponential quit</li>
-<li>twitter copy</li>
-<li>instagram copy</li>
-<li>url shortener</li>
-<li>distributed value key store like Redis was one day</li>
-<li>buttplug io</li>
-<li>embedded stuff</li>
-<li>petrol API + location API to get nearby petrol stations, extra: integrate with maps to calc if price diff can make up for extra miles</li>
-<li>generate podcast xml</li>
-<li>uptime tracker</li>
-<li>increment.build</li>
-<li>write ORM</li>
-<li>youtube-dl</li>
-<li>json sorter CLI</li>
-<li>whatsapp unilink</li>
-<li>link checker https://github.com/filiph/linkcheck</li>
-<li>mine sweeper</li>
-<li>sudoku and sudoku solver</li>
-<li>aphasia helper https://github.com/flutter-munich/hackathon</li>
-<li>fake proglang https://github.com/lhartikk/ArnoldC</li>
-<li>study cards memory cards</li>
-<li>vibrate phone to pattern, URL sharing</li>
-<li>pomodoro timer</li>
-<li>HIIT helper</li>
-<li>simple chat app with websockets or firebase or similar</li>
-<li>whois client</li>
-<li>mqtt app</li>
-<li>pusher app (help users manage and self host push notifications)</li>
-<li>squoosh</li>
-<li>live ffi spectrum</li>
-<li>voice recorder in the browser</li>
-<li>docker "client" (displaying all the stuff that docker desktop does)</li>
-<li>kafka client</li>
-<li>image ditherer</li>
-<li>seafood (is it pizza, yes or no). self train ML. or connect to API</li>
-<li>country specific name generator</li>
-<li>cli voice recorder</li>
-<li>public transport app (I'm at A location, want to go to B, how to get their). find api</li>
-<li>random number generator</li>
-<li>authenticator app</li>
-<li>baby tracker</li>
-<li>book tracker</li>
-<li>book social app</li>
-<li>punch card app</li>
-<li>leveler giroscope data</li>
-<li>countdown count up app</li>
-<li>arxiv reader</li>
-<li>stupid simple server side analytics</li>
-<li>QR code generator and decoder</li>
-<li>restaurant menu app</li>
-<li>weight tracking app</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="about-the-book"><a class="header" href="#about-the-book">About the book</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="about-the-author"><a class="header" href="#about-the-author">About the author</a></h1>
-<p>Hi, I'm Vince Varga. I'm a software engineer with over 10 years of experience. By day, I build mobile apps with Flutter. In my free time, I tinker with Rust.</p>
-<p>I enjoy learning new tools, exploring different programming languages, and working on small projects that help me understand how things work. This book is a collection of project ideas I've gathered over time, perfect for when you want to build something but don't know what.</p>
-<p>You can find more about me at <a href="https://vincevarga.dev">vincevarga.dev</a>.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="todomvc"><a class="header" href="#todomvc">TodoMVC</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="your-life-in-weeks"><a class="header" href="#your-life-in-weeks">Your Life in Weeks</a></h1>
-<p>This project visualizes a human lifespan as a grid of weeks.
-The idea comes from the concept that an average human life (assuming 80 years)
-consists of about 4,160 weeks. By representing each week as a small square,
-we create a visual reminder of how much time has passed and how much remains.
-This can be a great motivational tool for setting goals and reflecting on life's priorities.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="calculator"><a class="header" href="#calculator">Calculator</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="starbutts"><a class="header" href="#starbutts">StarButts</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="cross-platform-calculator"><a class="header" href="#cross-platform-calculator">Cross-Platform Calculator</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="todomvc-1"><a class="header" href="#todomvc-1">TodoMVC</a></h1>
+                        <h1 id="calculator"><a class="header" href="#calculator">Calculator</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="your-life-in-weeks.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
+                            <a rel="next prefetch" href="starbutts.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -278,7 +180,13 @@ This can be a great motivational tool for setting goals and reflecting on life's
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="your-life-in-weeks.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
+                    <a rel="next prefetch" href="starbutts.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
@@ -301,13 +209,6 @@ This can be a great motivational tool for setting goals and reflecting on life's
 
         <!-- Custom JS scripts -->
 
-        <script>
-        window.addEventListener('load', function() {
-            MathJax.Hub.Register.StartupHook('End', function() {
-                window.setTimeout(window.print, 100);
-            });
-        });
-        </script>
 
     </div>
     </body>

@@ -1,0 +1,9 @@
+# Caddy configuration snippet for yapper.vincevarga.dev
+# This file is deployed to /etc/caddy/conf.d/yapper.vincevarga.dev.caddy
+# The main Caddyfile imports all snippets: import /etc/caddy/conf.d/*.caddy
+
+yapper.vincevarga.dev {
+    root * /var/www/yapper.vincevarga.dev
+    file_server
+}
+
